@@ -350,9 +350,20 @@
           </li>
         </ul>
       </div>
+      <div class="footer-form-telega">
+        <p class="footer-subcribe">Subscribe</p>
+        <form action="footer-form">
+          <label class="footer-label">
+            <input type="mail" name="user-email" class="footer-input" placeholder="E-mail">
+          </label>
+          <button type="submit" class="footer-submit">Subscribe<svg class="modal-icon" width="24" height="24">
+              <use class="icon-footer-submit" href="./images/icons.svg#icon-telega"></use>
+            </svg></button>
+        </form>
+      </div>
     </div>
   </footer>
-  <div class="backdrob" data-modal>
+  <div class="backdrob is-hidden" data-modal>
     <div class="modal-window">
       <button type="button" class="modal-close-button" data-modal-close>
         <svg class="modal-close-icon" width="8" height="8">
@@ -393,8 +404,8 @@
           <span class="modal-windows-text">Comment</span>
           <textarea class="modal-form-comment" name="user-message" placeholder="Text input"></textarea>
         </label>
-        <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check" required>
-        <label for="user-policy" class="modal-form-check-desk">I accept the terms and conditions of the <a
+        <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden" required>
+        <label for="user-policy" class="modal-form-check-desk"> I accept the terms and conditions of the&nbsp;<a
             href="">Privacy
             Policy</a></label>
         <button type="submit" class="modal-form-submit">Send</button>
@@ -405,4 +416,3 @@
 </body>
 
 </html>
-is-hidden
